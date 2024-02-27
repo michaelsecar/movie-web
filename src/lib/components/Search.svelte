@@ -17,11 +17,11 @@
 ">
     <input placeholder="Buscar..." on:change={onInputChange} bind:value type="text"
         class="p-1 px-2 border-2 rounded-l-lg font-light
-            focus:outline-none placeholder:text-secondary
-            dark:bg-background dark:text-foreground dark:border-primary
+            focus:outline-none 
+            dark:bg-background-secondary dark:text-foreground dark:border-foreground-secondary
         "
     />
     <button class="p-2 rounded-r-lg border-2 border-l-0
-        dark:border-primary"
+        dark:border-foreground-secondary"
     ><SearchIcon/></button>
 </div>

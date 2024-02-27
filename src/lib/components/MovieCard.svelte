@@ -4,7 +4,7 @@
 </script>
 
 <div class="rounded-lg overflow-hidden h-72 border-2 duration-100
-    border-tertiary dark:bg-background
+    border-foreground-secondary dark:bg-background-secondary
     hover:drop-shadow-background hover:scale-102
 ">
     <div class="text-2xl p-2">

@@ -7,6 +7,7 @@ export default {
         "background": "#111",
         "background-secondary": "#1a1a1a",
         "foreground": "#ddd",
+        "foreground-secondary": "#333",
         "primary": "#ab92bf",
         "secondary": "#8b729f",
         "tertiary": "#6f5b7b",
