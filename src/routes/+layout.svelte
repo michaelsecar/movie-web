@@ -5,12 +5,16 @@
     import Footer from "$lib/components/Footer.svelte"
 </script>
 
-
-<body class="dark dark:bg-primary text-secondary">
+<body class="dark 
+    dark:bg-background dark:text-foreground
+    dark:border-primary
+">
     <Navbar/>
-    <main class="flex">
+    <main class="flex justify-center">
         <Sidebar/>
-        <slot/>
+        <section class="bg-background-secondary flex w-5/6 pt-16 pb-8 px-8">
+            <slot/>
+        </section>
     </main>
     <Footer/>
 </body>

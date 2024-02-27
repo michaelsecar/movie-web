@@ -1,19 +1,22 @@
 <script>
-    import SearchIcon from '$lib/icons/Search.svelte'
-    import Input from '$lib/components/Input.svelte'
-
-    const onInputChange = (/** @type {string} */ value) => {
-        console.log(value)
-    }
+    import Search from '$lib/components/Search.svelte'
+  
 </script>
 
-<section class="border-b-2 dark:border-secondary font-semibold flex dark:bg-background p-2">
+<section class="border-b-2 font-bold text-sm flex p-2 px-8 text-primary w-full
+    border-tertiary dark:shadow-lg dark:shadow-background dark:bg-background
+    fixed top-0
+    z-10
+">
     <ul class="flex justify-between w-full items-center">
         <li>
-            <a class="text-2xl" href="/">MOVIE-WEB</a>
+            <a class="text-3xl font-bolder" href="/">MOVIE-WEB</a>
         </li>
         <li class="flex">
-            <ul class="flex gap-4 items-center">
+            <ul class="flex gap-8 items-center
+                hover:[&>li>a]:text-secondary
+                [&>li>a]:duration-100
+            ">
                 <li>
                     <a href="/categoria">Categorias</a>
                 </li>
@@ -21,8 +24,7 @@
                     <a href="/estrenos">Estrenos</a>
                 </li>
                 <li class="flex items-center">
-                    <Input placeholder="Buscar..." onChange={onInputChange}/>
-                    <button class="p-2 rounded-r-lg border-gray-400 border-2 border-l-0"><SearchIcon/></button>
+                    <Search/>
                 </li>
             </ul>
         </li>

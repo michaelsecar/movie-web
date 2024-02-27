@@ -35,12 +35,12 @@
 
 </script>
 
-<div class="m-4 flex flex-col w-full">
+<div class="flex flex-col w-full">
     <h1 class="text-4xl font-bold">Películas</h1>
     <div class="py-4">
         <p>Visit kit.svelte.dev to read the documentation</p>
     </div>
-    <div class="grid grid-cols-5 w-full gap-4">
+    <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 w-full gap-4">
         {#each movies as movie}
             <MovieCard movie={movie} />
         {/each}

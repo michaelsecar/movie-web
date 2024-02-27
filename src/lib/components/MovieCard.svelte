@@ -1,20 +1,11 @@
 
 <script>
-    /**
-     * @type {{ 
-     *  title: string; 
-     *  description: string;
-     *  imageUrl: string
-     * }}
-     */
      export let movie 
-
 </script>
 
-<div class="
-    border-gray-400 rounded-lg overflow-hidden h-80 border-2 duration-200
-    hover:drop-shadow-[0px_0px_10px_rgba(0,0,0,3)] hover:scale-105
-    bg-secondary dark:bg-background
+<div class="rounded-lg overflow-hidden h-72 border-2 duration-100
+    border-tertiary dark:bg-background
+    hover:drop-shadow-background hover:scale-102
 ">
     <div class="text-2xl p-2">
         {movie.title}
