@@ -1,8 +1,8 @@
 
 <script>
-    export let text
+    export let onClick = () => {}
 </script>
 
-<button>
-    {text}
+<button on:click={onClick}>
+    <slot/>
 </button>

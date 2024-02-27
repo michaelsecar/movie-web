@@ -1,5 +1,8 @@
 <script>
     import Search from '$lib/components/Search.svelte'
+    import Menu from '$lib/components/Menu.svelte'
+
+    let showMenu = false
   
 </script>
 
@@ -12,7 +15,10 @@
         <li>
             <a class="text-3xl font-bolder" href="/">MOVIE-WEB</a>
         </li>
-        <li class="flex">
+        <li class="flex md:hidden">
+            <Menu/>
+        </li>
+        <li class="hidden md:flex">
             <ul class="flex gap-8 items-center
                 hover:[&>li>a]:text-secondary
                 [&>li>a]:duration-100
@@ -28,5 +34,5 @@
                 </li>
             </ul>
         </li>
-    </ul>
+   </ul>
 </section>
