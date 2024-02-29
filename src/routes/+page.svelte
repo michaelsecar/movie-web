@@ -1,39 +1,27 @@
 <script>
+    import { onMount } from "svelte";
     import MovieCard from "$lib/components/MovieCard.svelte";
     import Filters from "../lib/components/Filters.svelte";
-    let movies = [
-        {
-            title:"Loter",
-            description: "una peli",
-            imageUrl:"https://picsum.photos/200/300"
-        },
-        {
-            title:"Loter",
-            description: "una peli",
-            imageUrl:"https://picsum.photos/200/300"
-        },
-        {
-            title:"Loter",
-            description: "una peli",
-            imageUrl:"https://picsum.photos/200/300"
-        },
-        {
-            title:"Loter",
-            description: "una peli",
-            imageUrl:"https://picsum.photos/200/300"
-        },
-        {
-            title:"Loter",
-            description: "una peli",
-            imageUrl:"https://picsum.photos/200/300"
-        },
-        {
-            title:"Loter",
-            description: "una peli",
-            imageUrl:"https://picsum.photos/200/300"
-        }
-    ]
 
+    const CHUNK_SIZE = 36
+
+    let movies = []
+    let chunk_index = 0
+
+    const createChunks = (data) => {
+        return Array.from(
+            {length: Math.ceil(data.length / CHUNK_SIZE)},
+            (v, i) => data.slice(i * CHUNK_SIZE, i * CHUNK_SIZE + CHUNK_SIZE)
+        )
+    }
+
+    onMount(async () => {
+        const res = await fetch("/api/top250")
+        const data = (await res.json()).movies
+        if (!data) return
+        const chunked = createChunks(data)
+        movies = chunked[chunk_index]
+    })
 </script>
 
 <div class="flex flex-col w-full">
