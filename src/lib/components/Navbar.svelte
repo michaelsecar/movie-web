@@ -18,7 +18,7 @@
         </li>
         <li class="hidden md:flex">
             <ul class="flex gap-8 items-center
-                hover:[&>li>a]:text-secondary
+                hover:[&>li>a]:text-primary
                 [&>li>a]:duration-100
             ">
                 <li>

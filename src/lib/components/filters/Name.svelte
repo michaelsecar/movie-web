@@ -1,5 +1,5 @@
 <script>
-    import FilterContainer from "./FilterContainer.svelte";
+    import FilterContainer from "$lib/components/filters/FilterContainer.svelte";
     let value = ""
     const onChange = (value) => {
         console.log(value)

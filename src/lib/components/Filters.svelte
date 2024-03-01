@@ -1,8 +1,10 @@
 
 <script>
-    import Genre from "./Filters/Genre.svelte";
-    import Year from "./Filters/Year.svelte";
-    import Name from "./Filters/Name.svelte";
+    import Genre from "$lib/components/filters/Genre.svelte";
+    import Year from "$lib/components/filters/Year.svelte";
+    import Name from "$lib/components/filters/Name.svelte";
+    import Button from "$lib/components/Button.svelte"
+    import FilterIcon from "$lib/icons/Filter.svelte"
 </script>
 
 <div class="flex border-2 p-4 rounded-t-lg bg-background
@@ -12,4 +14,9 @@
     <Name/>
     <Genre/>
     <Year/>
+    <Button>
+        <div class="flex items-center gap-1">
+            <FilterIcon/><span>Filtrar</span>
+        </div>
+    </Button>
 </div>

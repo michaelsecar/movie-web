@@ -3,6 +3,9 @@
     export let onClick = () => {}
 </script>
 
-<button on:click={onClick}>
+<button class="
+    bg-primary text-background px-4 rounded-md
+    hover:bg-secondary 
+" on:click={onClick}>
     <slot/>
 </button>

@@ -1,7 +1,7 @@
 
 <script>
-    import FilterContainer from "./FilterContainer.svelte";
-    let value = 2022
+    import FilterContainer from "$lib/components/filters/FilterContainer.svelte";
+    let value = 1950
 </script>
 
 <FilterContainer>
@@ -10,7 +10,7 @@
     </label>
     <div class="flex items-center gap-2 h-10 bg-background-secondary w-full rounded-r-md px-2 accent-secondary ">
         {value}
-        <input type="range" name="year" id="year" bind:value min="2000" max="2024" class="outline-none w-full">
+        <input type="range" name="year" id="year" bind:value min="1950" max="2024" class="outline-none w-full">
     </div>
 
 </FilterContainer>
