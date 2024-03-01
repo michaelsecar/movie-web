@@ -1,11 +1,20 @@
 <script>
+    export let description = ""
+    export let catalog = ""
+    export let href = ""
 
 </script>
 
-<div class="border-2 rounded-lg p-2 text-xl uppercase font-bold
-    border-foreground-secondary bg-tertiary 
-    hover:bg-center duration-200
-    hover:bg-gradient-to-br from-primary via-secondary to-tertiary
-">
-    <slot/>
-</div>
+<a class="border-2 rounded-lg p-4 
+    border-foreground-secondary bg-background
+    bg-gradient-to-r from-background to-background
+    hover:from-background-secondary 
+" href={href}>
+
+    <div class="text-xl uppercase font-bold">
+        {catalog}
+    </div>
+    <div>
+        {description}
+    </div>
+</a>

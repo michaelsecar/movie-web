@@ -2,6 +2,7 @@
     import "../app.css"
     import Navbar from "$lib/components/Navbar.svelte"
     import Footer from "$lib/components/Footer.svelte"
+    import Catalog from "$lib/components/Catalog.svelte"
 </script>
 
 <body class="dark 
@@ -11,7 +12,12 @@
     <Navbar/>
     <main class="flex justify-center">
         <section class="bg-background-secondary flex w-5/6 pt-20 pb-8 px-8">
-            <slot/>
+        <div class="flex flex-col w-full">
+            <Catalog/>
+            <div class="bg-background border-2 border-foreground-secondary rounded-lg">
+                <slot/>
+            </div>
+        </div>
         </section>
     </main>
     <Footer/>

@@ -7,7 +7,7 @@
     import FilterIcon from "$lib/icons/Filter.svelte"
 </script>
 
-<div class="flex border-2 p-4 rounded-t-lg bg-background
+<div class="flex border-b-2 p-4 rounded-t-lg bg-background
     border-foreground-secondary justify-around gap-2
     flex-col md:flex-row
 ">

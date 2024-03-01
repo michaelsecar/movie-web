@@ -1,5 +1,5 @@
 
-<div class="flex justify-center pt-9 border-x-2 border-foreground-secondary bg-background">
+<div class="flex justify-center pt-9">
     <div class="text-center">
         <h1 class="text-3xl font-bold text-primary">
             Ocurrió un error
