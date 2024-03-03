@@ -5,13 +5,12 @@
 
 </script>
 
-<a class="border-2 rounded-lg p-4 
-    border-foreground-secondary bg-background
-    bg-gradient-to-r from-background to-background
-    hover:from-background-secondary 
+<a class="rounded-lg p-4 
+    bg-gradient-to-br from-primary to-secondary
+    hover:from-secondary hover:to-tertiary 
 " href={href}>
 
-    <div class="text-xl uppercase font-bold">
+    <div class="text-xl uppercase font-bold pb-5">
         {catalog}
     </div>
     <div>
