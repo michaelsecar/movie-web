@@ -12,4 +12,6 @@ npm install
 
 # Get your API key and host
 
-`https://rapidapi.com/Murad123/api/moviesverse1`
+```bash
+https://rapidapi.com/Murad123/api/moviesverse1
+```
