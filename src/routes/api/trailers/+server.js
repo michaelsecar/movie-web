@@ -2,12 +2,12 @@ import { env } from '$env/dynamic/private'
 
 /** @type {import('./$types').RequestHandler} */
 export const GET = async () => {
-    const url = 'https://moviesverse1.p.rapidapi.com/get-trending-trailers'
+    const url = 'https://moviesverse1.p.rapidapi.com/most-trending-movies'
     const options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': env.API_KEY,
-            'X-RapidAPI-Host': env.API_HOST
+            'x-rapidapi-key': env.API_KEY,
+            'x-rapidapi-host': env.API_HOST
         }
     }
     const response = await fetch(url, options)
